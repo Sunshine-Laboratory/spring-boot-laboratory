@@ -10,14 +10,16 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>laboratory-self</module>
+        <module>laboratory-mq</module>
     </modules>
 
     <properties>
-        <spring.boot.version>2.2.1.RELEASE</spring.boot.version>
+        <spring.boot.version>2.2.5.RELEASE</spring.boot.version>
         <mybatis.spring.boot.starter.version>2.1.1</mybatis.spring.boot.starter.version>
         <vavr.version>0.10.2</vavr.version>
         <org.aspectj.version>1.9.4</org.aspectj.version>
-        <org.springframework.verion>5.2.1.RELEASE</org.springframework.verion>
+        <org.springframework.verion>5.2.4.RELEASE</org.springframework.verion>
+        <org.springframework.kafka.version>2.4.3.RELEASE</org.springframework.kafka.version>
     </properties>
 
     <dependencyManagement>
@@ -40,6 +42,11 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-aspects</artifactId>
                 <version>${org.springframework.verion}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.kafka</groupId>
+                <artifactId>spring-kafka</artifactId>
+                <version>${org.springframework.kafka.version}</version>
             </dependency>
             <!-- ivar -->
             <dependency>

@@ -5,8 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * AOP实验室启动器
- * @author <sunshine>
- * @created 2019/11/28
+ * @author sunshine
+ * @created 2019-11-28
  */
 @SpringBootApplication
 public class LaboratoryAOPBootstrap {
