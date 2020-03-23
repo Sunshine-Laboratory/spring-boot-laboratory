@@ -1,0 +1,5 @@
+server:
+  port: 40010
+spring:
+  application:
+    name: spring-boot-laboratory-mq-kafka
