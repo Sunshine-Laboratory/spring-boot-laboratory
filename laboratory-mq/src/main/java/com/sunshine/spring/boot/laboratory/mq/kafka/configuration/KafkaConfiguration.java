@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 import org.springframework.kafka.core.ConsumerFactory;
-import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
@@ -62,14 +61,6 @@ public class KafkaConfiguration {
 	// producer配置结束
 
 	// consumer配置开始
-	@Bean
-	public ConsumerFactory<String, String> buildConsumerFactory() {
-		Map<String, Object> kafkaConsumerConfigMap = new HashMap<>();
-
-		DefaultKafkaConsumerFactory defaultKafkaConsumerFactory = new DefaultKafkaConsumerFactory(kafkaConsumerConfigMap);
-		return defaultKafkaConsumerFactory;
-	}
-
 	@Bean
 	public ConcurrentKafkaListenerContainerFactory<?, ?> buildKafkaListenerContainerFactory(ConcurrentKafkaListenerContainerFactoryConfigurer concurrentKafkaListenerContainerFactoryConfigurer, ConsumerFactory<String, String> consumerFactory, KafkaTemplate<Object, Object> kafkaTemplate) {
 		ConcurrentKafkaListenerContainerFactory<?, ?> concurrentKafkaListenerContainerFactory = new ConcurrentKafkaListenerContainerFactory<>();

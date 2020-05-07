@@ -14,11 +14,11 @@
     </modules>
 
     <properties>
-        <spring.boot.version>2.2.5.RELEASE</spring.boot.version>
-        <mybatis.spring.boot.starter.version>2.1.1</mybatis.spring.boot.starter.version>
+        <spring.boot.version>2.2.6.RELEASE</spring.boot.version>
+        <mybatis.spring.boot.starter.version>2.1.2</mybatis.spring.boot.starter.version>
         <vavr.version>0.10.2</vavr.version>
         <org.aspectj.version>1.9.4</org.aspectj.version>
-        <org.springframework.verion>5.2.4.RELEASE</org.springframework.verion>
+        <org.springframework.verion>5.2.5.RELEASE</org.springframework.verion>
         <org.springframework.kafka.version>2.4.3.RELEASE</org.springframework.kafka.version>
     </properties>
 

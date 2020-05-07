@@ -14,12 +14,8 @@ import org.springframework.stereotype.Service;
 @Service("kafkaProduceService")
 public class KafkaProduceServiceImpl implements KafkaProduceService {
 
-	private final KafkaTemplate<Object, Object> kafkaTemplate;
-
 	@Autowired
-	public KafkaProduceServiceImpl(KafkaTemplate<Object, Object> kafkaTemplate) {
-		this.kafkaTemplate = kafkaTemplate;
-	}
+	private KafkaTemplate kafkaTemplate;
 
 	@Override
 	public String produce(String message) {
